@@ -1,12 +1,13 @@
 # Provenance tracking using blockchain and cryptography
 The code is attempting to implement a blockchain using the C++ programming language and the OpenSSL library for cryptographic operations.
 
+
 - The blockchain consists of blocks that store a list of transactions, and the transactions are verified using RSA public-key cryptography and Challenge-Response Authentication with HMAC.
 - The blockchain class contains a vector of blocks, a difficulty level for the proof-of-work algorithm, and a vector of current transactions.
 - Transactions can be added using the addTransaction function, which first verifies the transaction using the sender's public key and a Challenge-Response Authentication with HMAC,
 and then adds it to the current transactions if it is valid.
 - Blocks can be created and added to the chain using the CreateAndAddBlock function, which creates a new block with the current transactions and mines it using the proof-of-work algorithm.
-
+- It is assumed that a block can contain any number of transactions and there can be any number of transactions between two users, the code verifies every transaction and adds it to a buffer. When all the transactions are safe and user calls CreateAndAddBlock function, it adds creates a new block with all the transactions present in the buffer. Even if one transaction is not safe, it discards all the transactions in the buffer made by the user.
 - The Block class contains information about each block, including its index, previous hash, timestamp, list of transactions, hash, and nonce.
 - The calculateHash function is used to calculate the hash of the block based on its index, previous hash, timestamp, nonce, and transactions.
 - The mineBlock function is used to mine the block using the proof-of-work algorithm, which involves finding a nonce that results in a hash that starts with a certain number of zeros.
