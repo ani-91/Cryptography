@@ -1,4 +1,4 @@
-
+# Provenance tracking using blockchain and cryptography
 The code is attempting to implement a blockchain using the C++ programming language and the OpenSSL library for cryptographic operations.
 
 - The blockchain consists of blocks that store a list of transactions, and the transactions are verified using RSA public-key cryptography and Challenge-Response Authentication with HMAC.
@@ -19,9 +19,15 @@ and then adds it to the current transactions if it is valid.
 - The class has methods to add a transaction to the current transaction list, verify the transaction using Challenge-Response Authentication with HMAC, the sender's private key(shared secret).
 - The class also has a method to create and add a new block to the blockchain after mining it using PoW.
 
-To Run this code:
+## To Run this code:
 - To run this C++ blockchain code, you will need to have OpenSSL installed on your system.
 - Then after running add block and respective parameters such as orgin, pric, shipping , delivery,etc.
 and then out of the 4 given options you can chose your desirable option to Add a new block  or view transactions of a particular user
 - Display the blockchain or Exit.
+
+## Output
+![Screenshot 2024-05-22 210317](https://github.com/ani-91/Cryptography-Blockchain/assets/141425684/80e2d06c-087e-45c8-b118-f63509369681)
+![Screenshot 2024-05-22 210449](https://github.com/ani-91/Cryptography-Blockchain/assets/141425684/f1239742-5901-4226-b7ba-e36cfa228629)
+![Screenshot 2024-05-22 210510](https://github.com/ani-91/Cryptography-Blockchain/assets/141425684/a492b924-5a8d-4572-82cf-799fd2935cdd)
+
 
