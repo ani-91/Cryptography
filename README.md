@@ -22,6 +22,7 @@ and then adds it to the current transactions if it is valid.
 
 ## To Run this code:
 - To run this C++ blockchain code, you will need to have OpenSSL installed on your system.
+- compile it with g++ code.cpp -o code -lssl -lcrypto
 - Then after running add block and respective parameters such as orgin, pric, shipping , delivery,etc.
 and then out of the 4 given options you can chose your desirable option to Add a new block  or view transactions of a particular user
 - Display the blockchain or Exit.
